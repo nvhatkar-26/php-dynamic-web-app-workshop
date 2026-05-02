@@ -8,8 +8,8 @@ Follow these steps to set up and run the PHP Dynamic Web Application project on 
 
 Make sure you have the following installed:
 
-* XAMPP (Apache + MySQL)
-* Code Editor (VS Code recommended)
+* XAMPP (Apache + MySQL): https://www.apachefriends.org/download.html
+* Code Editor (VS Code recommended): https://code.visualstudio.com/download
 * Web Browser (Chrome/Edge)
 
 ---
