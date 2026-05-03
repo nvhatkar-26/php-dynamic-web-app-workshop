@@ -1,5 +1,4 @@
 <?php include 'db.php'; ?>
-<a href="index.php">Go to Listing Page</a>
 <form method="POST">
     Name: <input type="text" name="name"><br>
     Email: <input type="text" name="email"><br>
