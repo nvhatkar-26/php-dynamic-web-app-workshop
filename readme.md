@@ -27,7 +27,7 @@ This workshop teaches how to build dynamic web applications using PHP and MySQL.
 
    * `htdocs` (XAMPP)
 4. Open browser:
-   http://localhost/php-dynamic-web-app-workshop/
+   http://localhost/php-dynamic-web-app-workshop/final-project/
 
 ## 📂 Project Structure
 
