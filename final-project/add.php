@@ -1,6 +1,6 @@
 <?php include 'db.php'; ?>
 
-<form method="POST">
+<form method="POST" action="index.php">
     Name: <input type="text" name="name"><br>
     Email: <input type="text" name="email"><br>
     Course: <input type="text" name="course"><br>
