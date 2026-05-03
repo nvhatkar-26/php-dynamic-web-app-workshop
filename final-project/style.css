@@ -1,0 +1,52 @@
+body {
+    font-family: Georgia, serif;
+    max-width: 40rem;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    line-height: 1.5;
+}
+
+h2 {
+    margin-bottom: 0.25rem;
+}
+
+a {
+    color: #063;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 0.35rem 0.5rem;
+}
+
+th {
+    background: #eee;
+}
+
+input {
+    width: 16rem;
+    margin: 0.15rem 0 0.5rem;
+}
+
+button {
+    margin-top: 0.35rem;
+    padding: 0.3rem 0.6rem;
+}
+
+.notice, .error {
+    padding: 0.35rem 0.5rem;
+}
+
+.notice {
+    background: #e8f8e8;
+}
+
+.error {
+    background: #ffe0e0;
+}

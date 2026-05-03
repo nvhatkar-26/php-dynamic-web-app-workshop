@@ -1,9 +1,20 @@
 <?php include 'db.php'; ?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Students</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
 <h2>Students</h2>
-<a href="add.php">Add Student</a>
+<p><a href="add.php">Add Student</a></p>
 
-<table border="1">
+<?php if (isset($_GET['added'])) { echo '<p class="notice">Student added.</p>'; } ?>
+<?php if (isset($_GET['updated'])) { echo '<p class="notice">Student updated.</p>'; } ?>
+
+<table>
 <tr>
     <th>ID</th>
     <th>Name</th>
@@ -13,18 +24,23 @@
 </tr>
 
 <?php
-$result = $conn->query("SELECT * FROM students");
+$result = $conn->query("SELECT * FROM students ORDER BY id DESC");
 
-while ($row = $result->fetch_assoc()) {
-    echo "<tr>
-        <td>{$row['id']}</td>
-        <td>{$row['name']}</td>
-        <td>{$row['email']}</td>
-        <td>{$row['course']}</td>
-        <td>
-            <a href='delete.php?id={$row['id']}'>Delete</a>
-        </td>
-    </tr>";
+if ($result && $result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        echo '<tr>';
+        echo '<td>' . $row['id'] . '</td>';
+        echo '<td>' . $row['name'] . '</td>';
+        echo '<td>' . $row['email'] . '</td>';
+        echo '<td>' . $row['course'] . '</td>';
+        echo '<td><a href="edit.php?id=' . $row['id'] . '">Edit</a> | <a href="delete.php?id=' . $row['id'] . '" onclick="return confirm(\'Delete?\');">Delete</a></td>';
+        echo '</tr>';
+    }
+} else {
+    echo '<tr><td colspan="5">No students yet.</td></tr>';
 }
 ?>
 </table>
+
+</body>
+</html>
