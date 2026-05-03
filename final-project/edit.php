@@ -52,7 +52,8 @@ if (isset($_POST['submit'])) {
 <body>
 
 <h2>Edit Student</h2>
-<p><a href="index.php">Back</a></p>
+<p><a href="index.php">Go to Listing Page</a></p>
+
 
 <?php if ($error != '') echo '<p class="error">' . $error . '</p>'; ?>
 
