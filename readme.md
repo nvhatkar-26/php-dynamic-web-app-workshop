@@ -14,8 +14,10 @@ This workshop teaches how to build dynamic web applications using PHP and MySQL.
 
 ## 🛠️ Requirements
 
-* XAMPP / WAMP installed
+* XAMPP installed
+   * Downaload XAMMP at https://www.apachefriends.org/download.html
 * Code Editor (VS Code recommended)
+   * Download VS Code at: https://code.visualstudio.com/docs?dv=win    
 
 ## ⚙️ Setup Instructions
 
