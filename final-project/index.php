@@ -12,7 +12,6 @@
 <p><a href="add.php">Add Student</a></p>
 
 <?php if (isset($_GET['added'])) { echo '<p class="notice">Student added.</p>'; } ?>
-<?php if (isset($_GET['updated'])) { echo '<p class="notice">Student updated.</p>'; } ?>
 
 <table>
 <tr>
@@ -33,7 +32,7 @@ if ($result && $result->num_rows > 0) {
         echo '<td>' . $row['name'] . '</td>';
         echo '<td>' . $row['email'] . '</td>';
         echo '<td>' . $row['course'] . '</td>';
-        echo '<td><a href="edit.php?id=' . $row['id'] . '">Edit</a> | <a href="delete.php?id=' . $row['id'] . '" onclick="return confirm(\'Delete?\');">Delete</a></td>';
+        echo '<td><a href="delete.php?id=' . $row['id'] . '" onclick="return confirm(\'Delete?\');">Delete</a></td>';
         echo '</tr>';
     }
 } else {
